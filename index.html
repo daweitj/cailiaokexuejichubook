@@ -80,6 +80,14 @@
   }
   .open:hover{background:#0b5750}
   footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;line-height:1.9}
+  .visit-counter{
+    margin-top:36px;padding-top:16px;border-top:1px solid var(--line);
+    text-align:center;color:var(--muted);font-size:12.5px;letter-spacing:.03em;
+  }
+  .visit-counter .sep{margin:0 8px;color:#c9c4b6}
+  #busuanzi_value_page_pv,#busuanzi_value_site_pv,#busuanzi_value_site_uv{
+    color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums;
+  }
   @media (max-width:640px){
     .row{grid-template-columns:48px 1fr auto;row-gap:8px}
     .size{display:none}
@@ -468,6 +476,11 @@
 
     </section>
   </main>
+
+  <div class="visit-counter">
+    <span id="busuanzi_container_page_pv">本页已被访问 <span id="busuanzi_value_page_pv">–</span> 次</span>
+  </div>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 </div>
 </body></html>
