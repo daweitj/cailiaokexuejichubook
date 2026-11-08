@@ -1,0 +1,477 @@
+<html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>材料科学基础 资料合集</title>
+<style>
+  :root{
+    --paper:#f6f4ee;
+    --ink:#1f2b2a;
+    --muted:#6d7876;
+    --line:#dcd8cd;
+    --accent:#0f6a60;
+    --accent-soft:#e2ece9;
+    --card:#fffdf8;
+    --section-title:#0b5750;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:56px 24px 72px}
+  header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:8px}
+  .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase;margin-bottom:14px}
+  h1{
+    font-family:"Songti SC","SimSun","Source Han Serif SC",serif;
+    font-size:clamp(30px,5vw,46px);
+    line-height:1.2;margin:0 0 14px;font-weight:600;letter-spacing:.02em;
+  }
+  .sub{color:var(--muted);font-size:15px;line-height:1.8;margin:0}
+  .intro{
+    margin:26px 0 32px;padding:22px 24px;background:var(--card);
+    border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;
+  }
+  .intro h2{
+    font-family:"Songti SC","SimSun",serif;font-size:17px;font-weight:600;
+    margin:0 0 12px;letter-spacing:.04em;
+  }
+  .intro p{font-size:14.5px;line-height:2;color:#3a4744;margin:0 0 10px;text-align:justify}
+  .intro .src{font-size:12.5px;color:var(--muted);line-height:1.8;margin:14px 0 0}
+  .intro .src a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
+  .section{margin-bottom:40px}
+  .section-title{
+    font-family:"Songti SC","SimSun",serif;
+    font-size:22px;font-weight:600;color:var(--section-title);
+    padding-bottom:10px;border-bottom:2px solid var(--accent-soft);
+    margin:0 0 16px;letter-spacing:.03em;
+  }
+  .subsection-title{
+    font-size:17px;font-weight:600;color:var(--ink);
+    margin:24px 0 12px 8px;padding-left:12px;
+    border-left:3px solid var(--accent);
+  }
+  .list{display:flex;flex-direction:column;gap:8px}
+  .row{
+    display:grid;
+    grid-template-columns:56px 1fr auto auto;
+    align-items:center;gap:16px;
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:14px 18px;
+    transition:border-color .15s,box-shadow .15s;
+  }
+  .row:hover{border-color:#c9c4b6;box-shadow:0 2px 10px rgba(31,43,42,.05)}
+  .vol{
+    font-family:"Songti SC","SimSun",serif;
+    font-size:15px;color:var(--accent);background:var(--accent-soft);
+    border-radius:8px;text-align:center;padding:5px 0;font-weight:600;white-space:nowrap;
+  }
+  .name{min-width:0}
+  .name a{color:var(--ink);text-decoration:none;font-size:16px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .name a:hover{color:var(--accent)}
+  .meta{font-size:12px;color:var(--muted);margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .size{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .open{
+    background:var(--accent);color:#fff;border:0;border-radius:9px;
+    padding:9px 16px;font-size:14px;text-decoration:none;white-space:nowrap;
+    display:inline-block;font-family:inherit;
+  }
+  .open:hover{background:#0b5750}
+  footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px;line-height:1.9}
+  @media (max-width:640px){
+    .row{grid-template-columns:48px 1fr auto;row-gap:8px}
+    .size{display:none}
+    .open{grid-column:3;grid-row:1/3}
+    .wrap{padding:36px 16px 56px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Materials Science Fundamentals Collection</div>
+    <h1>材料科学基础 资料合集</h1>
+    <p class="sub">
+      本页汇总材料科学基础相关的中文教材、外文教材、习题辅导与专题参考资料，所有文件均为PDF格式，每个文件对应独立的百度网盘永久分享链接，提取码已内嵌在链接中。点击各文件右侧的「百度网盘」按钮可直接打开对应分享页；若未自动填写提取码，请手动输入。链接可能因网盘原因失效，可随时反馈更新。
+    </p>
+    <p class="sub" style="margin-top:8px;font-size:13.5px;color:#8a8f8c">
+      本页不存储任何文件，所有内容的版权归原出版方及作者所有，仅供个人学习检索之用；如有侵权，请联系删除。
+    </p>
+  </header>
+
+  <section class="intro">
+    <h2>合集说明</h2>
+    <p>
+      本合集整理了材料科学基础领域的主流中英文经典教材、配套习题解答、学习辅导以及物理冶金、相图与热力学等方向的专题参考资料，覆盖本科到研究生阶段材料科学基础课程的核心学习需求。
+    </p>
+    <p>
+      中文教材包含胡赓祥、刘智恩、潘金生、余永宁、石德珂、张联盟等国内经典版本；外文教材包含Callister、Askeland、Ashby、Mittemeijer、Smith等国际通用经典教材；同时配套了主流教材的习题解答与考点辅导资料，方便学习与备考使用。
+    </p>
+  </section>
+
+  <main>
+    <!-- 01 中文教材 -->
+    <section class="section">
+      <h2 class="section-title">01 中文教材</h2>
+      <div class="list" id="list-cn-book">
+        <div class="row">
+          <div class="vol">1</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1PFHGLs3C-Cu1TBbCtULwfg?pwd=igyk" target="_blank" rel="noopener" title="顾宜_材料科学与工程基础.pdf">顾宜 材料科学与工程基础</a>
+            <div class="meta">顾宜_材料科学与工程基础.pdf</div>
+          </div>
+          <div class="size">14.2 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1PFHGLs3C-Cu1TBbCtULwfg?pwd=igyk" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">2</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1ralyesj8Q9Z006XZFQKITQ?pwd=4hw4" target="_blank" rel="noopener" title="胡赓祥_蔡珣_材料科学基础_第3版.pdf">胡赓祥 蔡珣 材料科学基础（第3版）</a>
+            <div class="meta">胡赓祥_蔡珣_材料科学基础_第3版.pdf</div>
+          </div>
+          <div class="size">44.7 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1ralyesj8Q9Z006XZFQKITQ?pwd=4hw4" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">3</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/17NHTk6jdsZMpJsw3Plf7GQ?pwd=77s1" target="_blank" rel="noopener" title="胡赓祥_蔡珣_戎咏华_材料科学基础_第4版.pdf">胡赓祥 蔡珣 戎咏华 材料科学基础（第4版）</a>
+            <div class="meta">胡赓祥_蔡珣_戎咏华_材料科学基础_第4版.pdf</div>
+          </div>
+          <div class="size">245.2 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/17NHTk6jdsZMpJsw3Plf7GQ?pwd=77s1" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">4</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1kix5Q8ofWHYXhh5P1F7DuQ?pwd=vyi6" target="_blank" rel="noopener" title="刘智恩_材料科学基础.pdf">刘智恩 材料科学基础</a>
+            <div class="meta">刘智恩_材料科学基础.pdf</div>
+          </div>
+          <div class="size">8.2 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1kix5Q8ofWHYXhh5P1F7DuQ?pwd=vyi6" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">5</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1lYeXnse3-MwkGRhllmSg9g?pwd=yckx" target="_blank" rel="noopener" title="潘金生_仝健民_田民波_材料科学基础_修订版.pdf">潘金生 仝健民 田民波 材料科学基础（修订版）</a>
+            <div class="meta">潘金生_仝健民_田民波_材料科学基础_修订版.pdf</div>
+          </div>
+          <div class="size">38.9 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1lYeXnse3-MwkGRhllmSg9g?pwd=yckx" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">6</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1QJGWxxPwc206uFEzI-V3pw?pwd=ut8k" target="_blank" rel="noopener" title="石德珂_材料科学基础_第2版.pdf">石德珂 材料科学基础（第2版）</a>
+            <div class="meta">石德珂_材料科学基础_第2版.pdf</div>
+          </div>
+          <div class="size">92 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1QJGWxxPwc206uFEzI-V3pw?pwd=ut8k" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">7</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1bUTjnDVa18Ol6t3kcGm3PA?pwd=izmq" target="_blank" rel="noopener" title="陶杰_材料科学基础_第2版.pdf">陶杰 材料科学基础（第2版）</a>
+            <div class="meta">陶杰_材料科学基础_第2版.pdf</div>
+          </div>
+          <div class="size">24.2 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1bUTjnDVa18Ol6t3kcGm3PA?pwd=izmq" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">8</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1xrApj7FP9gcw3lyuKBDFoA?pwd=jgdp" target="_blank" rel="noopener" title="谢希文_过梅丽_材料科学基础.pdf">谢希文 过梅丽 材料科学基础</a>
+            <div class="meta">谢希文_过梅丽_材料科学基础.pdf</div>
+          </div>
+          <div class="size">11.5 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1xrApj7FP9gcw3lyuKBDFoA?pwd=jgdp" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">9</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1izLpzLexEyI_8N93HCS4ag?pwd=b5uu" target="_blank" rel="noopener" title="徐恒钧_材料科学基础.pdf">徐恒钧 材料科学基础</a>
+            <div class="meta">徐恒钧_材料科学基础.pdf</div>
+          </div>
+          <div class="size">28.2 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1izLpzLexEyI_8N93HCS4ag?pwd=b5uu" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">10</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1Qp4OBFXNn1JiLlpfXOWEvA?pwd=i27n" target="_blank" rel="noopener" title="余永宁_材料科学基础.pdf">余永宁 材料科学基础</a>
+            <div class="meta">余永宁_材料科学基础.pdf</div>
+          </div>
+          <div class="size">37 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1Qp4OBFXNn1JiLlpfXOWEvA?pwd=i27n" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">11</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1hoYgpHyViISSBuKQOk9bmA?pwd=pzq2" target="_blank" rel="noopener" title="张联盟_黄学辉_宋晓岚_材料科学基础.pdf">张联盟 黄学辉 宋晓岚 材料科学基础</a>
+            <div class="meta">张联盟_黄学辉_宋晓岚_材料科学基础.pdf</div>
+          </div>
+          <div class="size">13.9 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1hoYgpHyViISSBuKQOk9bmA?pwd=pzq2" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">12</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1RsoyujCRvj3DHnCqEIgg3A?pwd=9cci" target="_blank" rel="noopener" title="张晓燕_材料科学基础_第2版.pdf">张晓燕 材料科学基础（第2版）</a>
+            <div class="meta">张晓燕_材料科学基础_第2版.pdf</div>
+          </div>
+          <div class="size">72.9 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1RsoyujCRvj3DHnCqEIgg3A?pwd=9cci" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">13</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1c8XYCN-BMSWHqGxOn1T1tA?pwd=bvvi" target="_blank" rel="noopener" title="赵品_谢辅洲_孙振国_材料科学基础教程.pdf">赵品 谢辅洲 孙振国 材料科学基础教程</a>
+            <div class="meta">赵品_谢辅洲_孙振国_材料科学基础教程.pdf</div>
+          </div>
+          <div class="size">10 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1c8XYCN-BMSWHqGxOn1T1tA?pwd=bvvi" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 外文教材 -->
+    <section class="section">
+      <h2 class="section-title">02 外文教材</h2>
+      <div class="list" id="list-en-book">
+        <div class="row">
+          <div class="vol">1</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1V3-HHvdcE46u1VCb6iUTEg?pwd=h41j" target="_blank" rel="noopener" title="Ashby_Materials engineering science processing and design_2019.pdf">Ashby Materials engineering science processing and design (2019)</a>
+            <div class="meta">Ashby_Materials engineering science processing and design_2019.pdf</div>
+          </div>
+          <div class="size">17.6 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1V3-HHvdcE46u1VCb6iUTEg?pwd=h41j" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">2</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1L4Eujw87rNKprFCCcUg4zg?pwd=qwev" target="_blank" rel="noopener" title="Askeland_Essentials of Materials Science and Engineering.pdf">Askeland Essentials of Materials Science and Engineering</a>
+            <div class="meta">Askeland_Essentials of Materials Science and Engineering.pdf</div>
+          </div>
+          <div class="size">24.4 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1L4Eujw87rNKprFCCcUg4zg?pwd=qwev" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">3</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1-Pk-fuJotLUfnty3EqkM0w?pwd=h8fc" target="_blank" rel="noopener" title="Askeland_The Science and Engineering of Materials_第7版.pdf">Askeland The Science and Engineering of Materials (7th Ed.)</a>
+            <div class="meta">Askeland_The Science and Engineering of Materials_第7版.pdf</div>
+          </div>
+          <div class="size">84.9 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1-Pk-fuJotLUfnty3EqkM0w?pwd=h8fc" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">4</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1LynimdVQe_7AtaMvfztcIQ?pwd=q7sq" target="_blank" rel="noopener" title="Callister_Fundamentals of Materials Science and Engineering_Integrated Approach.pdf">Callister Fundamentals of Materials Science and Engineering</a>
+            <div class="meta">Callister_Fundamentals of Materials Science and Engineering_Integrated Approach.pdf</div>
+          </div>
+          <div class="size">21.1 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1LynimdVQe_7AtaMvfztcIQ?pwd=q7sq" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">5</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1utZofUtc24wqaputWRQKGA?pwd=8dw4" target="_blank" rel="noopener" title="Callister_Materials Science and Engineering_An Introduction.pdf">Callister Materials Science and Engineering: An Introduction</a>
+            <div class="meta">Callister_Materials Science and Engineering_An Introduction.pdf</div>
+          </div>
+          <div class="size">68.8 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1utZofUtc24wqaputWRQKGA?pwd=8dw4" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">6</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/15D32ridCYXTO4CBll6WOvg?pwd=97jm" target="_blank" rel="noopener" title="Douglas_Introduction to Materials Science and Engineering.pdf">Douglas Introduction to Materials Science and Engineering</a>
+            <div class="meta">Douglas_Introduction to Materials Science and Engineering.pdf</div>
+          </div>
+          <div class="size">98.1 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/15D32ridCYXTO4CBll6WOvg?pwd=97jm" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">7</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1egExn_z2Ndo8TPl20KRNnQ?pwd=dquv" target="_blank" rel="noopener" title="Mittemeijer_Fundamentals of Materials Science_第2版.pdf">Mittemeijer Fundamentals of Materials Science (2nd Ed.)</a>
+            <div class="meta">Mittemeijer_Fundamentals of Materials Science_第2版.pdf</div>
+          </div>
+          <div class="size">16.3 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1egExn_z2Ndo8TPl20KRNnQ?pwd=dquv" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">8</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1XYLjluIwg1dtoTvZd-I5_w?pwd=g7mc" target="_blank" rel="noopener" title="Smith_Foundations of Materials Science and Engineering.pdf">Smith Foundations of Materials Science and Engineering</a>
+            <div class="meta">Smith_Foundations of Materials Science and Engineering.pdf</div>
+          </div>
+          <div class="size">130.9 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1XYLjluIwg1dtoTvZd-I5_w?pwd=g7mc" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 习题与辅导 -->
+    <section class="section">
+      <h2 class="section-title">03 习题与辅导</h2>
+      
+      <h3 class="subsection-title">中文资料</h3>
+      <div class="list" id="list-ex-cn">
+        <div class="row">
+          <div class="vol">1</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1bTBiUC80qhGMZQ9eD2nn_w?pwd=7v6s" target="_blank" rel="noopener" title="材料科学基础常见题型解析及模拟题.pdf">材料科学基础常见题型解析及模拟题</a>
+            <div class="meta">材料科学基础常见题型解析及模拟题.pdf</div>
+          </div>
+          <div class="size">3.6 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1bTBiUC80qhGMZQ9eD2nn_w?pwd=7v6s" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">2</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1Pz5PFh4xe-JaBWTnQPuzug?pwd=myky" target="_blank" rel="noopener" title="蔡珣_戎咏华_材料科学基础辅导与习题.pdf">蔡珣 戎咏华 材料科学基础辅导与习题</a>
+            <div class="meta">蔡珣_戎咏华_材料科学基础辅导与习题.pdf</div>
+          </div>
+          <div class="size">4.9 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1Pz5PFh4xe-JaBWTnQPuzug?pwd=myky" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">3</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/135hWdgG0ZPa2Nr5NWavBww?pwd=1nne" target="_blank" rel="noopener" title="范群成_田民波_材料科学基础学习辅导.pdf">范群成 田民波 材料科学基础学习辅导</a>
+            <div class="meta">范群成_田民波_材料科学基础学习辅导.pdf</div>
+          </div>
+          <div class="size">24.4 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/135hWdgG0ZPa2Nr5NWavBww?pwd=1nne" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">4</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1q3HKkIr4NKSgtqs5zwCJ4g?pwd=bmkw" target="_blank" rel="noopener" title="刘智恩_材料科学基础导教导学导考.pdf">刘智恩 材料科学基础导教导学导考</a>
+            <div class="meta">刘智恩_材料科学基础导教导学导考.pdf</div>
+          </div>
+          <div class="size">85.1 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1q3HKkIr4NKSgtqs5zwCJ4g?pwd=bmkw" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">5</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1ewSSfxEDAWH3gKlS619g3w?pwd=t3e4" target="_blank" rel="noopener" title="吕宇鹏_边洁_敖青_材料科学基础学习指导.pdf">吕宇鹏 边洁 敖青 材料科学基础学习指导</a>
+            <div class="meta">吕宇鹏_边洁_敖青_材料科学基础学习指导.pdf</div>
+          </div>
+          <div class="size">6.6 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1ewSSfxEDAWH3gKlS619g3w?pwd=t3e4" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">6</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1StQD71RdYRx2RgV8Vv6FcQ?pwd=6a9t" target="_blank" rel="noopener" title="宋晓岚_无机材料科学基础辅导与习题集.pdf">宋晓岚 无机材料科学基础辅导与习题集</a>
+            <div class="meta">宋晓岚_无机材料科学基础辅导与习题集.pdf</div>
+          </div>
+          <div class="size">52.7 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1StQD71RdYRx2RgV8Vv6FcQ?pwd=6a9t" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">7</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1wyEyXfknihhzBK3zHwybeQ?pwd=hhp7" target="_blank" rel="noopener" title="陶杰_姚正军_薛烽_材料科学基础考试试题与解析_第2版.pdf">陶杰 姚正军 薛烽 材料科学基础考试试题与解析（第2版）</a>
+            <div class="meta">陶杰_姚正军_薛烽_材料科学基础考试试题与解析_第2版.pdf</div>
+          </div>
+          <div class="size">30 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1wyEyXfknihhzBK3zHwybeQ?pwd=hhp7" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">8</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/12VLCOUf8Nct0qrx2BdVgyw?pwd=sdn4" target="_blank" rel="noopener" title="赵品_宋润滨_崔占全_材料科学基础教程习题及解答_修订版.pdf">赵品 宋润滨 崔占全 材料科学基础教程习题及解答（修订版）</a>
+            <div class="meta">赵品_宋润滨_崔占全_材料科学基础教程习题及解答_修订版.pdf</div>
+          </div>
+          <div class="size">51.5 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/12VLCOUf8Nct0qrx2BdVgyw?pwd=sdn4" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">外文资料</h3>
+      <div class="list" id="list-ex-en">
+        <div class="row">
+          <div class="vol">1</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1NoJAJjiGB_LMJEOu4reWBA?pwd=p7ak" target="_blank" rel="noopener" title="Callister_Solution Manual_第8版.pdf">Callister 教材习题解答（第8版）</a>
+            <div class="meta">Callister_Solution Manual_第8版.pdf</div>
+          </div>
+          <div class="size">13.5 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1NoJAJjiGB_LMJEOu4reWBA?pwd=p7ak" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 专题参考 -->
+    <section class="section">
+      <h2 class="section-title">04 专题参考</h2>
+      
+      <h3 class="subsection-title">相图与热力学</h3>
+            <div class="list" id="list-ref-phase">
+        <div class="row">
+          <div class="vol">1</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1eTn0aeNxBGG5N475ki4beg?pwd=q9iu" target="_blank" rel="noopener" title="Saka_Introduction to Phase Diagrams.pdf">Saka Introduction to Phase Diagrams</a>
+            <div class="meta">Saka_Introduction to Phase Diagrams.pdf</div>
+          </div>
+          <div class="size">18.7 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1eTn0aeNxBGG5N475ki4beg?pwd=q9iu" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">物理冶金</h3>
+      <div class="list" id="list-ref-metallurgy">
+        <div class="row">
+          <div class="vol">1</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/17GXerJVkXTR-lPBb2ilj5w?pwd=ken8" target="_blank" rel="noopener" title="Abbaschian_Physical Metallurgy Principles_第5版.pdf">Abbaschian Physical Metallurgy Principles (5th Ed.)</a>
+            <div class="meta">Abbaschian_Physical Metallurgy Principles_第5版.pdf</div>
+          </div>
+          <div class="size">43.3 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/17GXerJVkXTR-lPBb2ilj5w?pwd=ken8" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">2</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1SrikIsJBNUpvGm-95a8i8g?pwd=1a4j" target="_blank" rel="noopener" title="Haidemenopoulos_Physical Metallurgy Principles and Design.pdf">Haidemenopoulos Physical Metallurgy Principles and Design</a>
+            <div class="meta">Haidemenopoulos_Physical Metallurgy Principles and Design.pdf</div>
+          </div>
+          <div class="size">14.6 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1SrikIsJBNUpvGm-95a8i8g?pwd=1a4j" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">3</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1CJkmznEgFlsS808bn-W4nw?pwd=14ep" target="_blank" rel="noopener" title="Hosford_Physical Metallurgy_第2版.pdf">Hosford Physical Metallurgy (2nd Ed.)</a>
+            <div class="meta">Hosford_Physical Metallurgy_第2版.pdf</div>
+          </div>
+          <div class="size">19.5 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1CJkmznEgFlsS808bn-W4nw?pwd=14ep" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+        <div class="row">
+          <div class="vol">4</div>
+          <div class="name">
+            <a href="https://pan.baidu.com/s/1aRRXRYHtj2KHnBYYrmCGFg?pwd=sn3t" target="_blank" rel="noopener" title="Martin_Stability of Microstructure in Metallic Systems_第2版.pdf">Martin Stability of Microstructure in Metallic Systems (2nd Ed.)</a>
+            <div class="meta">Martin_Stability of Microstructure in Metallic Systems_第2版.pdf</div>
+          </div>
+          <div class="size">28.5 MB</div>
+          <a class="open" href="https://pan.baidu.com/s/1aRRXRYHtj2KHnBYYrmCGFg?pwd=sn3t" target="_blank" rel="noopener">百度网盘</a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    本页面样式参考自《材料科学与技术丛书》分享页，所有资源均来自网络公开整理，仅供学习交流使用。<br>
+本页共 35 个文件，每条分享链接均于 2026-11-08 创建，有效期：永久有效；如遇链接失效可在原文件夹重新生成。
+  </footer>
+</div>
+</body></html>
